@@ -1,0 +1,711 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato - Bellezza Estética</title>
+    <!-- SEO Melhorado -->
+    <meta name="description"
+        content="Entre em contato com a Bellezza Estética. Tire suas dúvidas, agende consultas ou envie sugestões. Estamos prontos para atendê-lo!">
+    <meta name="keywords"
+        content="contato clínica estética, agendar consulta estética, telefone clínica beleza, endereço clínica estética">
+
+    <!-- Open Graph para compartilhamento em redes sociais -->
+    <meta property="og:title" content="Contato - Bellezza Estética">
+    <meta property="og:description" content="Entre em contato com a Bellezza Estética. Estamos prontos para atendê-lo!">
+    <meta property="og:image" content="https://example.com/images/bellezza-preview.jpg">
+    <meta property="og:url" content="https://bellezzaestetica.com.br/contato.html">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- AOS Animations -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Ferramentas de Acessibilidade -->
+    <div class="accessibility-tools bg-light py-2">
+        <div class="container">
+            <div class="d-flex justify-content-between align-items-center">
+                <!-- Seletor de Idioma -->
+                <div class="language-selector dropdown">
+                    <button class="btn btn-sm btn-outline-secondary dropdown-toggle" type="button"
+                        data-bs-toggle="dropdown">
+                        <i class="fas fa-globe"></i> PT-BR
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item active" href="#">Português</a></li>
+                        <li><a class="dropdown-item" href="#">English</a></li>
+                        <li><a class="dropdown-item" href="#">Español</a></li>
+                    </ul>
+                </div>
+
+                <!-- Controles de Acessibilidade -->
+                <div>
+                    <button class="btn btn-sm btn-outline-secondary me-2 font-size-control"
+                        data-size="decrease">A-</button>
+                    <button class="btn btn-sm btn-outline-secondary me-2 font-size-control" data-size="reset">A</button>
+                    <button class="btn btn-sm btn-outline-secondary me-3 font-size-control"
+                        data-size="increase">A+</button>
+                    <button class="btn btn-sm btn-outline-dark high-contrast-toggle">Alto Contraste</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top bg-white shadow-sm mt-4">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">
+                    <span class="text-primary fw-bold">Bellezza</span>
+                    <span class="text-secondary">Estética</span>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Início</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html#servicos">Serviços</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html#sobre">Sobre</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html#equipe">Equipe</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="antes_depois.html">Antes/Depois</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="blog.html">Blog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="contato.html">Contato</a>
+                        </li>
+                    </ul>
+                    <a href="index.html#agendamento" class="btn btn-primary ms-lg-3">Agendar Agora</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Page Header -->
+    <section class="bg-primary text-white py-5 mt-5">
+        <div class="container py-5">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <h1 class="fw-bold">Entre em Contato</h1>
+                    <p class="lead">Estamos prontos para te atender e responder suas dúvidas</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section-padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-5 mb-5 mb-lg-0" data-aos="fade-right" data-aos-delay="100">
+                    <h2 class="fw-bold mb-4">Vamos conversar?</h2>
+                    <p class="text-muted mb-4">Preencha o formulário ao lado ou utilize um dos canais abaixo para entrar
+                        em contato conosco. Teremos o maior prazer em atendê-lo(a)!</p>
+
+                    <div class="d-flex mb-4">
+                        <div class="contact-icon me-4">
+                            <i class="fas fa-map-marker-alt fa-2x text-primary"></i>
+                        </div>
+                        <div>
+                            <h5 class="fw-bold">Endereço</h5>
+                            <p class="text-muted mb-0">Av. Paulista, 1000, Bela Vista<br>São Paulo - SP, 01310-100</p>
+                        </div>
+                    </div>
+
+                    <div class="d-flex mb-4">
+                        <div class="contact-icon me-4">
+                            <i class="fas fa-phone-alt fa-2x text-primary"></i>
+                        </div>
+                        <div>
+                            <h5 class="fw-bold">Telefones</h5>
+                            <p class="text-muted mb-0">(11) 3456-7890<br>(11) 99999-9999 (WhatsApp)</p>
+                            <a href="https://wa.me/5511999999999" class="btn btn-sm btn-outline-primary mt-2">
+                                <i class="fab fa-whatsapp me-1"></i> Fale pelo WhatsApp
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="d-flex mb-4">
+                        <div class="contact-icon me-4">
+                            <i class="fas fa-envelope fa-2x text-primary"></i>
+                        </div>
+                        <div>
+                            <h5 class="fw-bold">E-mail</h5>
+                            <p class="text-muted mb-0">
+                                contato@bellezzaestetica.com.br<br>agendamento@bellezzaestetica.com.br</p>
+                        </div>
+                    </div>
+
+                    <div class="d-flex mb-4">
+                        <div class="contact-icon me-4">
+                            <i class="fas fa-clock fa-2x text-primary"></i>
+                        </div>
+                        <div>
+                            <h5 class="fw-bold">Horário de Funcionamento</h5>
+                            <p class="text-muted mb-0">Segunda a Sexta: 9h às 20h<br>Sábado: 9h às 17h<br>Domingo:
+                                Fechado</p>
+                        </div>
+                    </div>
+
+                    <h5 class="fw-bold mb-3">Siga-nos:</h5>
+                    <div class="social-links">
+                        <a href="#" class="me-3"><i class="fab fa-facebook-f fa-2x text-primary"></i></a>
+                        <a href="#" class="me-3"><i class="fab fa-instagram fa-2x text-primary"></i></a>
+                        <a href="#" class="me-3"><i class="fab fa-twitter fa-2x text-primary"></i></a>
+                        <a href="#" class="me-3"><i class="fab fa-linkedin-in fa-2x text-primary"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-7" data-aos="fade-left" data-aos-delay="200">
+                    <div class="card border-0 shadow-lg">
+                        <div class="card-body p-5">
+                            <h3 class="fw-bold mb-4 text-center">Envie sua mensagem</h3>
+                            <form id="contact-form">
+                                <div class="row g-3">
+                                    <div class="col-md-6">
+                                        <label for="name" class="form-label">Nome completo</label>
+                                        <input type="text" class="form-control" id="name" required>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="email" class="form-label">E-mail</label>
+                                        <input type="email" class="form-control" id="email" required>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="phone" class="form-label">Telefone</label>
+                                        <input type="tel" class="form-control" id="phone" required>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="subject" class="form-label">Assunto</label>
+                                        <select class="form-select" id="subject" required>
+                                            <option value="" selected disabled>Selecione o assunto</option>
+                                            <option>Informações sobre tratamentos</option>
+                                            <option>Agendamento</option>
+                                            <option>Valores e pacotes</option>
+                                            <option>Dúvidas gerais</option>
+                                            <option>Trabalhe conosco</option>
+                                            <option>Outro assunto</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-12">
+                                        <label for="message" class="form-label">Mensagem</label>
+                                        <textarea class="form-control" id="message" rows="5" required></textarea>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" id="privacy-policy"
+                                                required>
+                                            <label class="form-check-label text-muted" for="privacy-policy">
+                                                Concordo com a <a href="#">Política de Privacidade</a> e o tratamento
+                                                dos meus dados pessoais.
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <button type="submit" class="btn btn-primary btn-lg w-100">Enviar
+                                            Mensagem</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="section-padding bg-light">
+        <div class="container">
+            <div class="row text-center mb-5">
+                <div class="col-12" data-aos="fade-up">
+                    <h2 class="fw-bold">Perguntas Frequentes</h2>
+                    <p class="text-muted">Respostas para as dúvidas mais comuns sobre nossos serviços</p>
+                </div>
+            </div>
+
+            <div class="row justify-content-center">
+                <div class="col-lg-8" data-aos="fade-up" data-aos-delay="100">
+                    <div class="accordion" id="contactFAQ">
+                        <div class="accordion-item mb-3 border">
+                            <h2 class="accordion-header" id="headingOne">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    Como posso agendar uma consulta?
+                                </button>
+                            </h2>
+                            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                                data-bs-parent="#contactFAQ">
+                                <div class="accordion-body">
+                                    Você pode agendar uma consulta de várias formas: através do nosso site preenchendo o
+                                    formulário de agendamento, ligando para (11) 3456-7890, enviando uma mensagem para
+                                    nosso WhatsApp (11) 99999-9999 ou enviando um e-mail para
+                                    agendamento@bellezzaestetica.com.br. Nossa equipe responderá o mais breve possível
+                                    para confirmar sua consulta.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item mb-3 border">
+                            <h2 class="accordion-header" id="headingTwo">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    Preciso fazer algum preparo antes dos procedimentos?
+                                </button>
+                            </h2>
+                            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                                data-bs-parent="#contactFAQ">
+                                <div class="accordion-body">
+                                    Isso depende do procedimento. Para a maioria dos tratamentos faciais, recomendamos
+                                    evitar exposição solar intensa nos dias anteriores. Para procedimentos específicos
+                                    como peelings ou microagulhamento, podem haver preparos adicionais. Na consulta
+                                    inicial, nossos especialistas fornecerão todas as orientações necessárias para o seu
+                                    tratamento específico.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item mb-3 border">
+                            <h2 class="accordion-header" id="headingThree">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    Vocês aceitam planos de saúde ou convênios?
+                                </button>
+                            </h2>
+                            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                                data-bs-parent="#contactFAQ">
+                                <div class="accordion-body">
+                                    Não trabalhamos com planos de saúde, pois nossos tratamentos são estéticos. No
+                                    entanto, oferecemos diversas opções de pagamento, incluindo parcelamento em até 12x
+                                    no cartão de crédito, além de pacotes promocionais que proporcionam descontos
+                                    significativos. Consulte nossa equipe para conhecer todas as opções disponíveis.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item border">
+                            <h2 class="accordion-header" id="headingFour">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                    Como funciona a avaliação inicial?
+                                </button>
+                            </h2>
+                            <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
+                                data-bs-parent="#contactFAQ">
+                                <div class="accordion-body">
+                                    A avaliação inicial é uma consulta completa onde nossos especialistas analisam suas
+                                    necessidades e objetivos estéticos. Utilizamos equipamentos de diagnóstico avançados
+                                    para avaliar sua pele ou área a ser tratada. Com base nessa análise, desenvolvemos
+                                    um plano de tratamento personalizado. A avaliação inicial tem duração média de 40
+                                    minutos e pode ser agendada por telefone, WhatsApp ou pelo nosso site.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <section class="container-fluid p-0">
+        <div class="row g-0">
+            <div class="col-12">
+                <div class="map-container" data-aos="fade-up">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.098371826054!2d-46.65390548516722!3d-23.563199784683294!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce59c8da0aa315%3A0xd59f9431f2c9776a!2sAv.%20Paulista%2C%20S%C3%A3o%20Paulo%20-%20SP!5e0!3m2!1spt-BR!2sbr!4v1645730125850!5m2!1spt-BR!2sbr"
+                        width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trabalhe Conosco -->
+    <section class="section-padding bg-light">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 mb-4 mb-lg-0" data-aos="fade-right" data-aos-delay="100">
+                    <h2 class="fw-bold mb-4">Trabalhe Conosco</h2>
+                    <p class="lead">Faça parte da nossa equipe de profissionais</p>
+                    <p class="text-muted">Estamos sempre em busca de talentos para compor nossa equipe. Se você é um
+                        profissional qualificado e apaixonado pela área de estética, envie seu currículo para nós.</p>
+                    <ul class="list-unstyled mb-4">
+                        <li class="mb-2"><i class="fas fa-check-circle text-primary me-2"></i> Ambiente de trabalho
+                            agradável</li>
+                        <li class="mb-2"><i class="fas fa-check-circle text-primary me-2"></i> Oportunidade de
+                            crescimento profissional</li>
+                        <li class="mb-2"><i class="fas fa-check-circle text-primary me-2"></i> Treinamentos e
+                            capacitações constantes</li>
+                        <li class="mb-2"><i class="fas fa-check-circle text-primary me-2"></i> Equipamentos e produtos
+                            de alta qualidade</li>
+                    </ul>
+                    <a href="#" class="btn btn-primary" data-bs-toggle="modal"
+                        data-bs-target="#trabalheConoscoModal">Enviar Currículo</a>
+                </div>
+                <div class="col-lg-6" data-aos="fade-left" data-aos-delay="200">
+                    <img src="https://images.unsplash.com/photo-1582095133179-bfd08e2fc6b3?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
+                        class="img-fluid rounded shadow" alt="Equipe de trabalho">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white pt-5 pb-4">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="fw-bold mb-4">Bellezza Estética</h4>
+                    <p>Cuidando da sua beleza e autoestima com tratamentos personalizados e inovadores.</p>
+                    <div class="social-links">
+                        <a href="#" class="text-white me-3"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="text-white me-3"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-white me-3"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-white me-3"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="fw-bold mb-4">Links rápidos</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="index.html" class="text-decoration-none text-white-50">Início</a></li>
+                        <li class="mb-2"><a href="index.html#servicos"
+                                class="text-decoration-none text-white-50">Serviços</a></li>
+                        <li class="mb-2"><a href="index.html#sobre" class="text-decoration-none text-white-50">Sobre</a>
+                        </li>
+                        <li class="mb-2"><a href="index.html#equipe"
+                                class="text-decoration-none text-white-50">Equipe</a></li>
+                        <li><a href="contato.html" class="text-decoration-none text-white-50">Contato</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="fw-bold mb-4">Serviços</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="servicos.html#limpeza"
+                                class="text-decoration-none text-white-50">Limpeza de Pele</a></li>
+                        <li class="mb-2"><a href="servicos.html#microagulhamento"
+                                class="text-decoration-none text-white-50">Microagulhamento</a></li>
+                        <li class="mb-2"><a href="servicos.html#hidratacao"
+                                class="text-decoration-none text-white-50">Hidratação Facial</a></li>
+                        <li class="mb-2"><a href="servicos.html#laser" class="text-decoration-none text-white-50">Laser
+                                Facial</a></li>
+                        <li><a href="servicos.html#massagem" class="text-decoration-none text-white-50">Massagem
+                                Relaxante</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="fw-bold mb-4">Contato</h5>
+                    <p class="mb-2"><i class="fas fa-map-marker-alt me-2"></i> Av. Paulista, 1000, São Paulo - SP</p>
+                    <p class="mb-2"><i class="fas fa-phone me-2"></i> (11) 99999-9999</p>
+                    <p class="mb-2"><i class="fas fa-envelope me-2"></i> contato@bellezzaestetica.com.br</p>
+                    <p><i class="fas fa-clock me-2"></i> Seg a Sex: 9h às 20h | Sáb: 9h às 17h</p>
+                </div>
+            </div>
+            <hr class="my-4">
+            <div class="row">
+                <div class="col-md-6 text-center text-md-start">
+                    <p class="mb-0">&copy; 2023 Bellezza Estética. Todos os direitos reservados.</p>
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <p class="mb-0">Desenvolvido com <i class="fas fa-heart text-danger"></i> por Web Design Studio</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modal Trabalhe Conosco -->
+    <div class="modal fade" id="trabalheConoscoModal" tabindex="-1" aria-labelledby="trabalheConoscoModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header bg-primary text-white">
+                    <h5 class="modal-title" id="trabalheConoscoModalLabel">Trabalhe Conosco</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
+                        aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form id="trabalhe-conosco-form">
+                        <div class="row g-3">
+                            <div class="col-md-6">
+                                <label for="candidate-name" class="form-label">Nome completo</label>
+                                <input type="text" class="form-control" id="candidate-name" required>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="candidate-email" class="form-label">E-mail</label>
+                                <input type="email" class="form-control" id="candidate-email" required>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="candidate-phone" class="form-label">Telefone</label>
+                                <input type="tel" class="form-control" id="candidate-phone" required>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="candidate-position" class="form-label">Vaga de interesse</label>
+                                <select class="form-select" id="candidate-position" required>
+                                    <option value="" selected disabled>Selecione</option>
+                                    <option>Esteticista</option>
+                                    <option>Massoterapeuta</option>
+                                    <option>Dermatologista</option>
+                                    <option>Recepcionista</option>
+                                    <option>Auxiliar Administrativo</option>
+                                    <option>Outro</option>
+                                </select>
+                            </div>
+                            <div class="col-12">
+                                <label for="candidate-experience" class="form-label">Experiência profissional</label>
+                                <textarea class="form-control" id="candidate-experience" rows="3" required></textarea>
+                            </div>
+                            <div class="col-12">
+                                <label for="candidate-cv" class="form-label">Anexar currículo (PDF, DOC ou DOCX)</label>
+                                <input type="file" class="form-control" id="candidate-cv" accept=".pdf,.doc,.docx"
+                                    required>
+                            </div>
+                            <div class="col-12">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="candidate-terms" required>
+                                    <label class="form-check-label text-muted" for="candidate-terms">
+                                        Concordo com a <a href="#">Política de Privacidade</a> e autorizo o tratamento
+                                        dos meus dados pessoais para fins de recrutamento.
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                    <button type="submit" form="trabalhe-conosco-form" class="btn btn-primary">Enviar
+                        Candidatura</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Chatbot -->
+    <div class="chat-widget">
+        <div class="chat-widget-button" id="chat-widget-toggle">
+            <i class="fas fa-comments"></i>
+        </div>
+        <div class="chat-widget-container" id="chat-widget">
+            <div class="chat-header">
+                <h5>Atendimento Online</h5>
+                <button class="chat-close" id="chat-close"><i class="fas fa-times"></i></button>
+            </div>
+            <div class="chat-body" id="chat-messages">
+                <div class="chat-message bot">
+                    <div class="message-content">
+                        Olá! Como posso ajudar você hoje? Estou aqui para responder suas dúvidas sobre nossos
+                        tratamentos estéticos.
+                    </div>
+                    <small class="message-time">Agora</small>
+                </div>
+            </div>
+            <div class="chat-footer">
+                <input type="text" class="chat-input" id="chat-input" placeholder="Digite sua mensagem...">
+                <button class="chat-send" id="chat-send"><i class="fas fa-paper-plane"></i></button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap & JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- AOS Animation -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+
+    <!-- Contact Form JavaScript -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            // Inicializar AOS
+            AOS.init({
+                duration: 800,
+                easing: 'ease-in-out',
+                once: true
+            });
+
+            // Formulário de contato
+            const contactForm = document.getElementById('contact-form');
+            if (contactForm) {
+                contactForm.addEventListener('submit', function (e) {
+                    e.preventDefault();
+
+                    // Simulação de envio do formulário
+                    const submitButton = this.querySelector('button[type="submit"]');
+                    const originalText = submitButton.innerHTML;
+
+                    submitButton.disabled = true;
+                    submitButton.innerHTML = '<i class="fas fa-spinner fa-spin me-2"></i>Enviando...';
+
+                    setTimeout(() => {
+                        // Limpar campos
+                        this.reset();
+
+                        // Criar mensagem de sucesso
+                        const successMessage = document.createElement('div');
+                        successMessage.className = 'alert alert-success mt-3';
+                        successMessage.innerHTML = '<strong>Mensagem enviada com sucesso!</strong> Entraremos em contato em breve.';
+
+                        this.parentElement.appendChild(successMessage);
+
+                        submitButton.disabled = false;
+                        submitButton.innerHTML = originalText;
+
+                        // Remover mensagem após alguns segundos
+                        setTimeout(() => {
+                            successMessage.remove();
+                        }, 5000);
+                    }, 1500);
+                });
+            }
+
+            // Formulário Trabalhe Conosco
+            const trabalheConoscoForm = document.getElementById('trabalhe-conosco-form');
+            if (trabalheConoscoForm) {
+                trabalheConoscoForm.addEventListener('submit', function (e) {
+                    e.preventDefault();
+
+                    // Simulação de envio do formulário
+                    const submitButton = document.querySelector('#trabalheConoscoModal .modal-footer button[type="submit"]');
+                    const originalText = submitButton.innerHTML;
+
+                    submitButton.disabled = true;
+                    submitButton.innerHTML = '<i class="fas fa-spinner fa-spin me-2"></i>Enviando...';
+
+                    setTimeout(() => {
+                        // Limpar campos
+                        this.reset();
+
+                        // Fechar modal
+                        const modal = bootstrap.Modal.getInstance(document.getElementById('trabalheConoscoModal'));
+                        modal.hide();
+
+                        // Criar toast de sucesso
+                        const toastContainer = document.createElement('div');
+                        toastContainer.className = 'position-fixed bottom-0 end-0 p-3';
+                        toastContainer.style.zIndex = '11';
+                        toastContainer.innerHTML = `
+                        <div class="toast show" role="alert" aria-live="assertive" aria-atomic="true">
+                            <div class="toast-header bg-success text-white">
+                                <strong class="me-auto">Candidatura Enviada</strong>
+                                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="toast" aria-label="Close"></button>
+                            </div>
+                            <div class="toast-body">
+                                Recebemos seu currículo! Nossa equipe de RH analisará seu perfil e entrará em contato se houver compatibilidade com nossas vagas.
+                            </div>
+                        </div>
+                    `;
+
+                        document.body.appendChild(toastContainer);
+
+                        submitButton.disabled = false;
+                        submitButton.innerHTML = originalText;
+
+                        // Remover toast após alguns segundos
+                        setTimeout(() => {
+                            toastContainer.remove();
+                        }, 6000);
+                    }, 2000);
+                });
+            }
+
+            // Máscara para telefone
+            const phoneInputs = document.querySelectorAll('input[type="tel"]');
+            if (phoneInputs.length > 0) {
+                phoneInputs.forEach(input => {
+                    input.addEventListener('input', function (e) {
+                        let value = e.target.value.replace(/\D/g, '');
+                        if (value.length > 0) {
+                            // Formato: (XX) XXXXX-XXXX
+                            if (value.length <= 2) {
+                                value = `(${value}`;
+                            } else if (value.length <= 7) {
+                                value = `(${value.substring(0, 2)}) ${value.substring(2)}`;
+                            } else if (value.length <= 11) {
+                                value = `(${value.substring(0, 2)}) ${value.substring(2, 7)}-${value.substring(7)}`;
+                            } else {
+                                value = `(${value.substring(0, 2)}) ${value.substring(2, 7)}-${value.substring(7, 11)}`;
+                            }
+                        }
+                        e.target.value = value;
+                    });
+                });
+            }
+
+            // Chatbot
+            const chatToggle = document.getElementById('chat-widget-toggle');
+            const chatWidget = document.getElementById('chat-widget');
+            const chatClose = document.getElementById('chat-close');
+            const chatInput = document.getElementById('chat-input');
+            const chatSend = document.getElementById('chat-send');
+            const chatMessages = document.getElementById('chat-messages');
+
+            if (chatToggle && chatWidget) {
+                chatToggle.addEventListener('click', function () {
+                    chatWidget.style.display = 'flex';
+                });
+
+                chatClose.addEventListener('click', function () {
+                    chatWidget.style.display = 'none';
+                });
+
+                function sendMessage() {
+                    const message = chatInput.value.trim();
+                    if (message !== '') {
+                        // Adicionar mensagem do usuário
+                        const userMessage = document.createElement('div');
+                        userMessage.className = 'chat-message user';
+                        userMessage.innerHTML = `
+                        <div class="message-content">${message}</div>
+                        <small class="message-time">Agora</small>
+                    `;
+                        chatMessages.appendChild(userMessage);
+
+                        // Limpar input
+                        chatInput.value = '';
+
+                        // Scroll para o final
+                        chatMessages.scrollTop = chatMessages.scrollHeight;
+
+                        // Simular resposta do bot após um pequeno delay
+                        setTimeout(function () {
+                            const botResponse = document.createElement('div');
+                            botResponse.className = 'chat-message bot';
+                            botResponse.innerHTML = `
+                            <div class="message-content">Obrigado por sua mensagem! Um de nossos atendentes entrará em contato em breve. Ou se preferir, ligue para (11) 99999-9999.</div>
+                            <small class="message-time">Agora</small>
+                        `;
+                            chatMessages.appendChild(botResponse);
+                            chatMessages.scrollTop = chatMessages.scrollHeight;
+                        }, 1000);
+                    }
+                }
+
+                chatSend.addEventListener('click', sendMessage);
+
+                chatInput.addEventListener('keypress', function (e) {
+                    if (e.key === 'Enter') {
+                        sendMessage();
+                    }
+                });
+            }
+        });
+    </script>
+</body>
+
+</html>

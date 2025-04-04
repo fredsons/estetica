@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Antes e Depois - Bellezza Estética</title>
+ <!-- SEO Melhorado -->
+ <meta name="description" content="Confira os resultados reais dos tratamentos estéticos da Bellezza. Transformações impressionantes em limpeza de pele, microagulhamento e mais.">
+ <meta name="keywords" content="antes e depois, resultados, tratamentos estéticos, microagulhamento, limpeza de pele">
+ 
+ <!-- Bootstrap CSS -->
+ <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+ <!-- Font Awesome -->
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+ <!-- AOS Animations -->
+ <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+ <!-- Custom CSS -->
+ <link rel="stylesheet" href="styles.css">
+ <!-- CSS adicional para corrigir o antes/depois -->
+ <style>
+     .img-compare {
+         position: relative;
+         width: 100%;
+         overflow: hidden;
+         border-radius: 10px;
+         height: 300px; /* Altura fixa para evitar problemas */
+     }
+
+     .img-compare img {
+         width: 100%;
+         height: 100%;
+         object-fit: cover;
+         display: block;
+     }
+
+     .img-compare-overlay {
+         position: absolute;
+         top: 0;
+         left: 0;
+         width: 50%;
+         height: 100%;
+         overflow: hidden;
+     }
+
+     .img-compare-overlay img {
+         position: absolute;
+         left: 0;
+         top: 0;
+         width: 200%; /* Mais largo para cobrir */
+         height: 100%;
+         object-fit: cover;
+     }
+
+     .slider-handle {
+         position: absolute;
+         top: 0;
+         bottom: 0;
+         left: 50%;
+         width: 4px;
+         margin-left: -2px;
+         background: white;
+         box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+         cursor: ew-resize;
+         z-index: 10;
+     }
+
+     .slider-handle i {
+         position: absolute;
+         top: 50%;
+         width: 30px;
+         height: 30px;
+         border-radius: 50%;
+         background-color: white;
+         box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+         text-align: center;
+         line-height: 30px;
+         transform: translateY(-50%);
+     }
+
+     .slider-handle i:first-child {
+         left: -15px;
+     }
+
+     .slider-handle i:last-child {
+         right: -15px;
+     }
+ </style>
+</head>
+<body>
+ <!-- Ferramentas de Acessibilidade -->
+ <div class="accessibility-tools bg-light py-2">
+     <div class="container">
+         <div class="d-flex justify-content-between align-items-center">
+             <!-- Seletor de Idioma -->
+             <div class="language-selector dropdown">
+                 <button class="btn btn-sm btn-outline-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown">
+                     <i class="fas fa-globe"></i> PT-BR
+                 </button>
+                 <ul class="dropdown-menu">
+                     <li><a class="dropdown-item active" href="#">Português</a></li>
+                     <li><a class="dropdown-item" href="#">English</a></li>
+                     <li><a class="dropdown-item" href="#">Español</a></li>
+                 </ul>
+             </div>
+             
+             <!-- Controles de Acessibilidade -->
+             <div>
+                 <button class="btn btn-sm btn-outline-secondary me-2 font-size-control" data-size="decrease">A-</button>
+                 <button class="btn btn-sm btn-outline-secondary me-2 font-size-control" data-size="reset">A</button>
+                 <button class="btn btn-sm btn-outline-secondary me-3 font-size-control" data-size="increase">A+</button>
+                 <button class="btn btn-sm btn-outline-dark high-contrast-toggle">Alto Contraste</button>
+             </div>
+         </div>
+     </div>
+ </div>
+
+ <!-- Header -->
+ <header>
+     <nav class="navbar navbar-expand-lg navbar-light fixed-top bg-white shadow-sm mt-4">
+         <div class="container">
+             <a class="navbar-brand" href="index.html">
+                 <span class="text-primary fw-bold">Bellezza</span>
+                 <span class="text-secondary">Estética</span>
+             </a>
+             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                 <span class="navbar-toggler-icon"></span>
+             </button>
+             <div class="collapse navbar-collapse" id="navbarNav">
+                 <ul class="navbar-nav ms-auto">
+                     <li class="nav-item">
+                         <a class="nav-link" href="index.html">Início</a>
+                     </li>
+                     <li class="nav-item">
+                         <a class="nav-link" href="index.html#servicos">Serviços</a>
+                     </li>
+                     <li class="nav-item">
+                         <a class="nav-link" href="index.html#sobre">Sobre</a>
+                     </li>
+                     <li class="nav-item">
+                         <a class="nav-link" href="index.html#equipe">Equipe</a>
+                     </li>
+                     <li class="nav-item">
+                         <a class="nav-link active" href="antes_depois.html">Antes/Depois</a>
+                     </li>
+                     <li class="nav-item">
+                         <a class="nav-link" href="blog.html">Blog</a>
+                     </li>
+                     <li class="nav-item">
+                         <a class="nav-link" href="contato.html">Contato</a>
+                     </li>
+                 </ul>
+                 <a href="index.html#agendamento" class="btn btn-primary ms-lg-3">Agendar Agora</a>
+             </div>
+         </div>
+     </nav>
+ </header>
+
+ <!-- Page Header -->
+ <section class="bg-primary text-white py-5 mt-5">
+     <div class="container py-5">
+         <div class="row">
+             <div class="col-12 text-center">
+                 <h1 class="fw-bold">Resultados Reais</h1>
+                 <p class="lead">Confira as transformações dos nossos clientes</p>
+             </div>
+         </div>
+     </div>
+ </section>
+
+ <!-- Antes e Depois Seção -->
+ <section class="section-padding">
+     <div class="container">
+         <div class="row mb-5">
+             <div class="col-12 text-center">
+                 <h2 class="fw-bold mb-4">Transformações que Falam por Si</h2>
+                 <p class="text-muted">Arraste o controle deslizante para ver os resultados antes e depois dos nossos tratamentos</p>
+             </div>
+         </div>
+         
+         <div class="row g-4">
+             <div class="col-lg-6 mb-5" data-aos="fade-up">
+                 <div class="before-after-container">
+                     <h4 class="fw-bold mb-3">Limpeza de Pele Profunda</h4>
+                     <div class="img-compare">
+                         <img src="https://images.unsplash.com/photo-1509967419530-da38b4704bc6?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Antes">
+                         <div class="img-compare-overlay">
+                             <img src="https://images.unsplash.com/photo-1522075469751-3a6694fb2f61?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Depois">
+                         </div>
+                         <div class="slider-handle">
+                             <i class="fas fa-chevron-left"></i>
+                             <i class="fas fa-chevron-right"></i>
+                         </div>
+                     </div>
+                     <div class="mt-3">
+                         <p class="mb-2"><strong>Cliente:</strong> Marina, 28 anos</p>
+                         <p class="mb-0"><strong>Tratamento:</strong> 3 sessões de limpeza de pele profunda</p>
+                     </div>
+                 </div>
+             </div>
+             
+             <div class="col-lg-6 mb-5" data-aos="fade-up" data-aos-delay="100">
+                 <div class="before-after-container">
+                     <h4 class="fw-bold mb-3">Microagulhamento</h4>
+                     <div class="img-compare">
+                         <img src="https://images.unsplash.com/photo-1526413232644-8a40f03cc03b?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Antes">
+                         <div class="img-compare-overlay">
+                             <img src="https://images.unsplash.com/photo-1531123897727-8f129e1688ce?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Depois">
+                         </div>
+                         <div class="slider-handle">
+                             <i class="fas fa-chevron-left"></i>
+                             <i class="fas fa-chevron-right"></i>
+                         </div>
+                     </div>
+                     <div class="mt-3">
+                         <p class="mb-2"><strong>Cliente:</strong> Carolina, 35 anos</p>
+                         <p class="mb-0"><strong>Tratamento:</strong> 4 sessões de microagulhamento para cicatrizes de acne</p>
+                     </div>
+                 </div>
+             </div>
+             
+             <div class="col-lg-6 mb-5" data-aos="fade-up" data-aos-delay="200">
+                 <div class="before-after-container">
+                     <h4 class="fw-bold mb-3">Tratamento para Olheiras</h4>
+                     <div class="img-compare">
+                         <img src="https://images.unsplash.com/photo-1570295999919-56ceb5ecca61?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Antes">
+                         <div class="img-compare-overlay">
+                             <img src="https://images.unsplash.com/photo-1568602471122-7832951cc4c5?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Depois">
+                         </div>
+                         <div class="slider-handle">
+                             <i class="fas fa-chevron-left"></i>
+                             <i class="fas fa-chevron-right"></i>
+                         </div>
+                     </div>
+                     <div class="mt-3">
+                         <p class="mb-2"><strong>Cliente:</strong> Paulo, 32 anos</p>
+                         <p class="mb-0"><strong>Tratamento:</strong> 5 sessões de tratamento para olheiras com peeling químico</p>
+                     </div>
+                 </div>
+             </div>
+             
+             <div class="col-lg-6 mb-5" data-aos="fade-up" data-aos-delay="300">
+                 <div class="before-after-container">
+                     <h4 class="fw-bold mb-3">Rejuvenescimento Facial</h4>
+                     <div class="img-compare">
+                         <img src="https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Antes">
+                         <div class="img-compare-overlay">
+                             <img src="https://images.unsplash.com/photo-1592621385612-4d7129426394?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Depois">
+                         </div>
+                         <div class="slider-handle">
+                             <i class="fas fa-chevron-left"></i>
+                             <i class="fas fa-chevron-right"></i>
+                         </div>
+                     </div>
+                     <div class="mt-3">
+                         <p class="mb-2"><strong>Cliente:</strong> Juliana, 45 anos</p>
+                         <p class="mb-0"><strong>Tratamento:</strong> Pacote completo de rejuvenescimento facial com 6 sessões</p>
+                     </div>
+                 </div>
+             </div>
+         </div>
+         
+         <div class="row mt-4">
+             <div class="col-12 text-center">
+                 <p class="text-muted">Resultados podem variar de acordo com cada organismo. Consulte nossos especialistas para uma avaliação personalizada.</p>
+                 <a href="index.html#agendamento" class="btn btn-primary btn-lg mt-3">Agende sua Avaliação</a>
+             </div>
+         </div>
+     </div>
+ </section>
+
+ <!-- Depoimentos dos Clientes -->
+ <section class="section-padding bg-light">
+     <div class="container">
+         <div class="row text-center mb-5">
+             <div class="col-12" data-aos="fade-up">
+                 <h2 class="fw-bold">Experiências dos Clientes</h2>
+                 <p class="text-muted">O que nossos clientes dizem sobre suas transformações</p>
+             </div>
+         </div>
+         
+         <div class="row g-4">
+             <div class="col-md-6" data-aos="fade-up" data-aos-delay="100">
+                 <div class="card border-0 shadow h-100">
+                     <div class="card-body p-4">
+                         <div class="mb-3">
+                             <i class="fas fa-quote-left fa-2x text-primary opacity-25"></i>
+                         </div>
+                         <p class="text-muted">"Eu nunca imaginei que poderia ter resultados tão surpreendentes com o tratamento de microagulhamento. Minhas cicatrizes de acne diminuíram significativamente e minha autoestima voltou! Toda a equipe da Bellezza é extremamente profissional e me deixou muito à vontade durante todo o processo."</p>
+                         <div class="d-flex align-items-center">
+                             <img src="https://images.unsplash.com/photo-1531123897727-8f129e1688ce?ixlib=rb-1.2.1&auto=format&fit=crop&w=100&q=80" class="rounded-circle" width="60" height="60" alt="Cliente">
+                             <div class="ms-3">
+                                 <h5 class="mb-0">Carolina Martins</h5>
+                                 <p class="text-muted mb-0">Microagulhamento</p>
+                             </div>
+                         </div>
+                     </div>
+                 </div>
+             </div>
+             
+             <div class="col-md-6" data-aos="fade-up" data-aos-delay="200">
+                 <div class="card border-0 shadow h-100">
+                     <div class="card-body p-4">
+                         <div class="mb-3">
+                             <i class="fas fa-quote-left fa-2x text-primary opacity-25"></i>
+                         </div>
+                         <p class="text-muted">"As olheiras sempre foram um problema para mim, me fazendo parecer constantemente cansado. Após o tratamento na Bellezza, a diferença é impressionante. Meus amigos e familiares ficaram surpresos com o resultado e agora me sinto muito mais confiante nas reuniões profissionais e encontros sociais."</p>
+                         <div class="d-flex align-items-center">
+                             <img src="https://images.unsplash.com/photo-1568602471122-7832951cc4c5?ixlib=rb-1.2.1&auto=format&fit=crop&w=100&q=80" class="rounded-circle" width="60" height="60" alt="Cliente">
+                             <div class="ms-3">
+                                 <h5 class="mb-0">Paulo Silveira</h5>
+                                 <p class="text-muted mb-0">Tratamento para Olheiras</p>
+                             </div>
+                         </div>
+                     </div>
+                 </div>
+             </div>
+         </div>
+     </div>
+ </section>
+
+ <!-- Call to Action -->
+ <section class="section-padding bg-primary text-white">
+     <div class="container">
+         <div class="row align-items-center">
+             <div class="col-lg-8 mx-auto text-center" data-aos="fade-up">
+                 <h2 class="fw-bold mb-4">Pronto para transformar sua aparência?</h2>
+                 <p class="lead mb-4">Agende uma avaliação gratuita e descubra qual tratamento é ideal para você</p>
+                 <a href="index.html#agendamento" class="btn btn-light btn-lg me-3">Agende Agora</a>
+                 <a href="contato.html" class="btn btn-outline-light btn-lg">Entre em Contato</a>
+             </div>
+         </div>
+     </div>
+ </section>
+
+ <!-- Footer -->
+ <footer class="bg-dark text-white pt-5 pb-4">
+     <div class="container">
+         <div class="row g-4">
+             <div class="col-lg-3 col-md-6">
+                 <h4 class="fw-bold mb-4">Bellezza Estética</h4>
+                 <p>Cuidando da sua beleza e autoestima com tratamentos personalizados e inovadores.</p>
+                 <div class="social-links">
+                     <a href="#" class="text-white me-3"><i class="fab fa-facebook-f"></i></a>
+                     <a href="#" class="text-white me-3"><i class="fab fa-instagram"></i></a>
+                     <a href="#" class="text-white me-3"><i class="fab fa-twitter"></i></a>
+                     <a href="#" class="text-white me-3"><i class="fab fa-linkedin-in"></i></a>
+                 </div>
+             </div>
+             <div class="col-lg-3 col-md-6">
+                 <h5 class="fw-bold mb-4">Links rápidos</h5>
+                 <ul class="list-unstyled">
+                     <li class="mb-2"><a href="index.html" class="text-decoration-none text-white-50">Início</a></li>
+                     <li class="mb-2"><a href="index.html#servicos" class="text-decoration-none text-white-50">Serviços</a></li>
+                     <li class="mb-2"><a href="index.html#sobre" class="text-decoration-none text-white-50">Sobre</a></li>
+                     <li class="mb-2"><a href="index.html#equipe" class="text-decoration-none text-white-50">Equipe</a></li>
+                     <li><a href="contato.html" class="text-decoration-none text-white-50">Contato</a></li>
+                 </ul>
+             </div>
+             <div class="col-lg-3 col-md-6">
+                 <h5 class="fw-bold mb-4">Serviços</h5>
+                 <ul class="list-unstyled">
+                     <li class="mb-2"><a href="servicos.html#limpeza" class="text-decoration-none text-white-50">Limpeza de Pele</a></li>
+                     <li class="mb-2"><a href="servicos.html#microagulhamento" class="text-decoration-none text-white-50">Microagulhamento</a></li>
+                     <li class="mb-2"><a href="servicos.html#hidratacao" class="text-decoration-none text-white-50">Hidratação Facial</a></li>
+                     <li class="mb-2"><a href="servicos.html#laser" class="text-decoration-none text-white-50">Laser Facial</a></li>
+                     <li><a href="servicos.html#massagem" class="text-decoration-none text-white-50">Massagem Relaxante</a></li>
+                 </ul>
+             </div>
+             <div class="col-lg-3 col-md-6">
+                 <h5 class="fw-bold mb-4">Contato</h5>
+                 <p class="mb-2"><i class="fas fa-map-marker-alt me-2"></i> Av. Paulista, 1000, São Paulo - SP</p>
+                 <p class="mb-2"><i class="fas fa-phone me-2"></i> (11) 99999-9999</p>
+                 <p class="mb-2"><i class="fas fa-envelope me-2"></i> contato@bellezzaestetica.com.br</p>
+                 <p><i class="fas fa-clock me-2"></i> Seg a Sex: 9h às 20h | Sáb: 9h às 17h</p>
+             </div>
+         </div>
+         <hr class="my-4">
+         <div class="row">
+             <div class="col-md-6 text-center text-md-start">
+                 <p class="mb-0">&copy; 2023 Bellezza Estética. Todos os direitos reservados.</p>
+             </div>
+             <div class="col-md-6 text-center text-md-end">
+                 <p class="mb-0">Desenvolvido com <i class="fas fa-heart text-danger"></i> por Web Design Studio</p>
+             </div>
+         </div>
+     </div>
+ </footer>
+
+ <!-- Chatbot -->
+ <div class="chat-widget">
+     <div class="chat-widget-button" id="chat-widget-toggle">
+         <i class="fas fa-comments"></i>
+     </div>
+     <div class="chat-widget-container" id="chat-widget">
+         <div class="chat-header">
+             <h5>Atendimento Online</h5>
+             <button class="chat-close" id="chat-close"><i class="fas fa-times"></i></button>
+         </div>
+         <div class="chat-body" id="chat-messages">
+             <div class="chat-message bot">
+                 <div class="message-content">
+                     Olá! Como posso ajudar você hoje? Estou aqui para responder suas dúvidas sobre nossos tratamentos estéticos.
+                 </div>
+                 <small class="message-time">Agora</small>
+             </div>
+         </div>
+         <div class="chat-footer">
+             <input type="text" class="chat-input" id="chat-input" placeholder="Digite sua mensagem...">
+             <button class="chat-send" id="chat-send"><i class="fas fa-paper-plane"></i></button>
+         </div>
+     </div>
+ </div>
+
+ <!-- Bootstrap & JavaScript -->
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+ <!-- AOS Animation -->
+ <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+ <!-- Custom JS -->
+ <script src="script.js"></script>
+ 
+ <!-- Script específico para o Antes/Depois -->
+ <script>
+     document.addEventListener('DOMContentLoaded', function() {
+         // Script para controle de antes e depois
+         const beforeAfterContainers = document.querySelectorAll('.img-compare');
+         
+         beforeAfterContainers.forEach(container => {
+             const slider = container.querySelector('.slider-handle');
+             const overlay = container.querySelector('.img-compare-overlay');
+             const overlayImg = overlay.querySelector('img');
+             
+             // Posição inicial
+             positionSlider(50);
+             
+             // Função para posicionar o slider
+             function positionSlider(percent) {
+                 overlay.style.width = percent + '%';
+                 slider.style.left = percent + '%';
+             }
+             
+             // Arrastar o slider
+             let isDragging = false;
+             
+             slider.addEventListener('mousedown', () => {
+                 isDragging = true;
+             });
+             
+             window.addEventListener('mouseup', () => {
+                 isDragging = false;
+             });
+             
+             container.addEventListener('mousemove', (e) => {
+                 if (!isDragging) return;
+                 
+                 const rect = container.getBoundingClientRect();
+                 const x = e.clientX - rect.left;
+                 const percent = Math.max(0, Math.min(100, x / rect.width * 100));
+                 
+                 positionSlider(percent);
+             });
+             
+             // Para touch devices
+             slider.addEventListener('touchstart', (e) => {
+                 isDragging = true;
+                 e.preventDefault();
+             });
+             
+             window.addEventListener('touchend', () => {
+                 isDragging = false;
+             });
+             
+             container.addEventListener('touchmove', (e) => {
+                 if (!isDragging) return;
+                 
+                 const rect = container.getBoundingClientRect();
+                 const x = e.touches[0].clientX - rect.left;
+                 const percent = Math.max(0, Math.min(100, x / rect.width * 100));
+                 
+                 positionSlider(percent);
+                 e.preventDefault();
+             });
+             
+             // Clique para mover o slider
+             container.addEventListener('click', (e) => {
+                 if (e.target === slider) return;
+                 
+                 const rect = container.getBoundingClientRect();
+                 const x = e.clientX - rect.left;
+                 const percent = Math.max(0, Math.min(100, x / rect.width * 100));
+                 
+                 positionSlider(percent);
+             });
+         });
+         
+         // Inicializar AOS
+         AOS.init({
+             duration: 800,
+             easing: 'ease-in-out',
+             once: true
+         });
+     });
+ </script>
+</body>
+</html>

@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Blog - Bellezza Estética</title>
+<!-- SEO Melhorado -->
+<meta name="description" content="Artigos e dicas sobre cuidados com a pele, tratamentos estéticos, procedimentos de beleza e bem-estar da Bellezza Estética.">
+<meta name="keywords" content="blog beleza, dicas de skincare, cuidados com a pele, tratamentos estéticos, blog estética">
+
+<!-- Bootstrap CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+<!-- Font Awesome -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+<!-- AOS Animations -->
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<!-- Custom CSS -->
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<!-- Ferramentas de Acessibilidade -->
+<div class="accessibility-tools bg-light py-2">
+    <div class="container">
+        <div class="d-flex justify-content-between align-items-center">
+            <!-- Seletor de Idioma -->
+            <div class="language-selector dropdown">
+                <button class="btn btn-sm btn-outline-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown">
+                    <i class="fas fa-globe"></i> PT-BR
+                </button>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item active" href="#">Português</a></li>
+                    <li><a class="dropdown-item" href="#">English</a></li>
+                    <li><a class="dropdown-item" href="#">Español</a></li>
+                </ul>
+            </div>
+            
+            <!-- Controles de Acessibilidade -->
+            <div>
+                <button class="btn btn-sm btn-outline-secondary me-2 font-size-control" data-size="decrease">A-</button>
+                <button class="btn btn-sm btn-outline-secondary me-2 font-size-control" data-size="reset">A</button>
+                <button class="btn btn-sm btn-outline-secondary me-3 font-size-control" data-size="increase">A+</button>
+                <button class="btn btn-sm btn-outline-dark high-contrast-toggle">Alto Contraste</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Header -->
+<header>
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top bg-white shadow-sm mt-4">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <span class="text-primary fw-bold">Bellezza</span>
+                <span class="text-secondary">Estética</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Início</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#servicos">Serviços</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#sobre">Sobre</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#equipe">Equipe</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="antes_depois.html">Antes/Depois</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="blog.html">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contato.html">Contato</a>
+                    </li>
+                </ul>
+                <a href="index.html#agendamento" class="btn btn-primary ms-lg-3">Agendar Agora</a>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<!-- Page Header -->
+<section class="bg-primary text-white py-5 mt-5">
+    <div class="container py-5">
+        <div class="row">
+            <div class="col-12 text-center">
+                <h1 class="fw-bold">Blog Bellezza</h1>
+                <p class="lead">Conteúdo exclusivo sobre beleza e bem-estar</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Blog Section -->
+<section class="section-padding">
+    <div class="container">
+        <div class="row">
+            <!-- Posts Column -->
+            <div class="col-lg-8">
+                <!-- Featured Post -->
+                <div class="card border-0 shadow mb-5" data-aos="fade-up">
+                    <img src="https://images.unsplash.com/photo-1498843053639-170ff2122f35?ixlib=rb-1.2.1&auto=format&fit=crop&w=1170&q=80" class="card-img-top" alt="Post em destaque">
+                    <div class="card-body p-4">
+                        <div class="post-info mb-3">
+                            <span><i class="fas fa-calendar-alt me-1"></i> 15 Mar, 2023</span>
+                            <span class="ms-3"><i class="fas fa-user me-1"></i> Dra. Ana Silva</span>
+                            <span class="ms-3"><i class="fas fa-tag me-1"></i> Cuidados com a Pele</span>
+                        </div>
+                        <h2 class="card-title fw-bold mb-3">5 hábitos diários para uma pele saudável</h2>
+                        <p class="card-text">A saúde da nossa pele reflete muito mais do que apenas nossa aparência externa. Uma pele radiante é geralmente um sinal de hábitos saudáveis e cuidados constantes. Neste artigo, compartilhamos cinco práticas diárias essenciais que podem transformar sua pele e potencializar os resultados dos seus tratamentos estéticos...</p>
+                        <a href="blog-post.html" class="btn btn-primary">Continue lendo</a>
+                    </div>
+                </div>
+                
+                <!-- Regular Posts -->
+                <div class="row g-4">
+                    <div class="col-md-6" data-aos="fade-up" data-aos-delay="100">
+                        <div class="card border-0 shadow h-100 blog-post">
+                            <img src="https://images.unsplash.com/photo-1598440947619-2c35fc9aa908?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" class="card-img-top" alt="Blog post">
+                            <div class="card-body">
+                                <div class="post-info mb-3">
+                                    <span><i class="fas fa-calendar-alt me-1"></i> 10 Mar, 2023</span>
+                                    <span class="ms-3"><i class="fas fa-user me-1"></i> Dr. Ricardo</span>
+                                </div>
+                                <h5 class="card-title fw-bold">Entenda o microagulhamento e seus benefícios</h5>
+                                <p class="card-text">O microagulhamento se tornou um dos procedimentos mais populares para rejuvenescimento da pele. Descubra como funciona e quais resultados esperar.</p>
+                                <a href="blog-post.html" class="btn btn-outline-primary">Ler mais</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-6" data-aos="fade-up" data-aos-delay="200">
+                        <div class="card border-0 shadow h-100 blog-post">
+                            <img src="https://images.unsplash.com/photo-1596755094514-f87e34085b2c?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" class="card-img-top" alt="Blog post">
+                            <div class="card-body">
+                                <div class="post-info mb-3">
+                                    <span><i class="fas fa-calendar-alt me-1"></i> 05 Mar, 2023</span>
+                                    <span class="ms-3"><i class="fas fa-user me-1"></i> Mariana Santos</span>
+                                </div>
+                                <h5 class="card-title fw-bold">Os benefícios da drenagem linfática</h5>
+                                <p class="card-text">Muito mais do que um tratamento estético, a drenagem linfática oferece diversos benefícios para a saúde. Conheça os principais.</p>
+                                <a href="blog-post.html" class="btn btn-outline-primary">Ler mais</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-6" data-aos="fade-up" data-aos-delay="100">
+                        <div class="card border-0 shadow h-100 blog-post">
+                            <img src="https://images.unsplash.com/photo-1517391882955-e1b20cafee7f?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" class="card-img-top" alt="Blog post">
+                            <div class="card-body">
+                                <div class="post-info mb-3">
+                                    <span><i class="fas fa-calendar-alt me-1"></i> 28 Fev, 2023</span>
+                                    <span class="ms-3"><i class="fas fa-user me-1"></i> Paula Oliveira</span>
+                                </div>
+                                <h5 class="card-title fw-bold">Como escolher o protetor solar ideal para seu tipo de pele</h5>
+                                <p class="card-text">O protetor solar é essencial para prevenir o envelhecimento precoce e proteger contra o câncer de pele. Veja como escolher o melhor para você.</p>
+                                <a href="blog-post.html" class="btn btn-outline-primary">Ler mais</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-6" data-aos="fade-up" data-aos-delay="200">
+                        <div class="card border-0 shadow h-100 blog-post">
+                            <img src="https://images.unsplash.com/photo-1583417267826-aebc4d1542e1?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" class="card-img-top" alt="Blog post">
+                            <div class="card-body">
+                                <div class="post-info mb-3">
+                                    <span><i class="fas fa-calendar-alt me-1"></i> 20 Fev, 2023</span>
+                                    <span class="ms-3"><i class="fas fa-user me-1"></i> Dra. Ana Silva</span>
+                                </div>
+                                <h5 class="card-title fw-bold">Mitos e verdades sobre acne em adultos</h5>
+                                <p class="card-text">A acne não é exclusiva da adolescência. Desvende os principais mitos e descubra o que realmente funciona para tratar a acne adulta.</p>
+                                <a href="blog-post.html" class="btn btn-outline-primary">Ler mais</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Pagination -->
+                <nav class="mt-5">
+                    <ul class="pagination justify-content-center">
+                        <li class="page-item disabled">
+                            <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Anterior</a>
+                        </li>
+                        <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                        <li class="page-item"><a class="page-link" href="#">2</a></li>
+                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                        <li class="page-item">
+                            <a class="page-link" href="#">Próxima</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            
+            <!-- Sidebar -->
+            <div class="col-lg-4">
+                <!-- Search -->
+                <div class="card border-0 shadow mb-4" data-aos="fade-up">
+                    <div class="card-body">
+                        <h5 class="fw-bold mb-3">Buscar</h5>
+                        <form>
+                            <div class="input-group">
+                                <input type="text" class="form-control" placeholder="Buscar artigos...">
+                                <button class="btn btn-primary" type="button">
+                                    <i class="fas fa-search"></i>
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                
+                <!-- Categories -->
+                <div class="card border-0 shadow mb-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="card-body">
+                        <h5 class="fw-bold mb-3">Categorias</h5>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item d-flex justify-content-between align-items-center">
+                                <a href="#" class="text-decoration-none text-dark">Cuidados com a Pele</a>
+                                <span class="badge bg-primary rounded-pill">12</span>
+                            </li>
+                            <li class="list-group-item d-flex justify-content-between align-items-center">
+                                <a href="#" class="text-decoration-none text-dark">Tratamentos Faciais</a>
+                                <span class="badge bg-primary rounded-pill">8</span>
+                            </li>
+                            <li class="list-group-item d-flex justify-content-between align-items-center">
+                                <a href="#" class="text-decoration-none text-dark">Massagens</a>
+                                <span class="badge bg-primary rounded-pill">5</span>
+                            </li>
+                            <li class="list-group-item d-flex justify-content-between align-items-center">
+                                <a href="#" class="text-decoration-none text-dark">Dicas de Beleza</a>
+                                <span class="badge bg-primary rounded-pill">14</span>
+                            </li>
+                            <li class="list-group-item d-flex justify-content-between align-items-center">
+                                <a href="#" class="text-decoration-none text-dark">Saúde e Bem-estar</a>
+                                <span class="badge bg-primary rounded-pill">7</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <!-- Popular Posts -->
+                <div class="card border-0 shadow mb-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="card-body">
+                        <h5 class="fw-bold mb-3">Artigos Populares</h5>
+                        <div class="mb-3">
+                            <div class="row g-0">
+                                <div class="col-3">
+                                    <img src="https://images.unsplash.com/photo-1564360770736-ea87a66e9ff8?ixlib=rb-1.2.1&auto=format&fit=crop&w=150&q=80" class="img-fluid rounded" alt="Post popular">
+                                </div>
+                                <div class="col-9">
+                                    <div class="ps-3">
+                                        <a href="blog-post.html" class="text-decoration-none text-dark">
+                                            <h6 class="mb-1">5 hábitos diários para uma pele saudável</h6>
+                                        </a>
+                                        <small class="text-muted">15 Mar, 2023</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <div class="row g-0">
+                                <div class="col-3">
+                                    <img src="https://images.unsplash.com/photo-1598440947619-2c35fc9aa908?ixlib=rb-1.2.1&auto=format&fit=crop&w=150&q=80" class="img-fluid rounded" alt="Post popular">
+                                </div>
+                                <div class="col-9">
+                                    <div class="ps-3">
+                                        <a href="blog-post.html" class="text-decoration-none text-dark">
+                                            <h6 class="mb-1">Entenda o microagulhamento e seus benefícios</h6>
+                                        </a>
+                                        <small class="text-muted">10 Mar, 2023</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <div class="row g-0">
+                                <div class="col-3">
+                                    <img src="https://images.unsplash.com/photo-1596755094514-f87e34085b2c?ixlib=rb-1.2.1&auto=format&fit=crop&w=150&q=80" class="img-fluid rounded" alt="Post popular">
+                                </div>
+                                <div class="col-9">
+                                    <div class="ps-3">
+                                        <a href="blog-post.html" class="text-decoration-none text-dark">
+                                            <h6 class="mb-1">Os benefícios da drenagem linfática</h6>
+                                        </a>
+                                        <small class="text-muted">05 Mar, 2023</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Newsletter -->
+                <div class="card border-0 shadow mb-4" data-aos="fade-up" data-aos-delay="300">
+                    <div class="card-body">
+                        <h5 class="fw-bold mb-3">Inscreva-se na Newsletter</h5>
+                        <p class="text-muted">Receba nossas dicas e novidades diretamente em seu e-mail.</p>
+                        <form>
+                            <div class="mb-3">
+                                <input type="email" class="form-control" placeholder="Seu e-mail" required>
+                            </div>
+                            <button type="submit" class="btn btn-primary w-100">Inscrever-se</button>
+                        </form>
+                    </div>
+                </div>
+                
+                <!-- Tags -->
+                <div class="card border-0 shadow" data-aos="fade-up" data-aos-delay="400">
+                    <div class="card-body">
+                        <h5 class="fw-bold mb-3">Tags</h5>
+                        <div class="d-flex flex-wrap gap-2">
+                            <a href="#" class="btn btn-sm btn-outline-secondary">Skincare</a>
+                            <a href="#" class="btn btn-sm btn-outline-secondary">Acne</a>
+                            <a href="#" class="btn btn-sm btn-outline-secondary">Hidratação</a>
+                            <a href="#" class="btn btn-sm btn-outline-secondary">Anti-idade</a>
+                            <a href="#" class="btn btn-sm btn-outline-secondary">Microagulhamento</a>
+                            <a href="#" class="btn btn-sm btn-outline-secondary">Massagem</a>
+                            <a href="#" class="btn btn-sm btn-outline-secondary">Protetor Solar</a>
+                            <a href="#" class="btn btn-sm btn-outline-secondary">Limpeza de Pele</a>
+                            <a href="#" class="btn btn-sm btn-outline-secondary">Dermocosméticos</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="bg-dark text-white pt-5 pb-4">
+    <div class="container">
+        <div class="row g-4">
+            <div class="col-lg-3 col-md-6">
+                <h4 class="fw-bold mb-4">Bellezza Estética</h4>
+                <p>Cuidando da sua beleza e autoestima com tratamentos personalizados e inovadores.</p>
+                <div class="social-links">
+                    <a href="#" class="text-white me-3"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="text-white me-3"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="text-white me-3"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="text-white me-3"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <h5 class="fw-bold mb-4">Links rápidos</h5>
+                <ul class="list-unstyled">
+                    <li class="mb-2"><a href="index.html" class="text-decoration-none text-white-50">Início</a></li>
+                    <li class="mb-2"><a href="index.html#servicos" class="text-decoration-none text-white-50">Serviços</a></li>
+                    <li class="mb-2"><a href="index.html#sobre" class="text-decoration-none text-white-50">Sobre</a></li>
+                    <li class="mb-2"><a href="index.html#equipe" class="text-decoration-none text-white-50">Equipe</a></li>
+                    <li><a href="contato.html" class="text-decoration-none text-white-50">Contato</a></li>
+                </ul>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <h5 class="fw-bold mb-4">Serviços</h5>
+                <ul class="list-unstyled">
+                    <li class="mb-2"><a href="servicos.html#limpeza" class="text-decoration-none text-white-50">Limpeza de Pele</a></li>
+                    <li class="mb-2"><a href="servicos.html#microagulhamento" class="text-decoration-none text-white-50">Microagulhamento</a></li>
+                    <li class="mb-2"><a href="servicos.html#hidratacao" class="text-decoration-none text-white-50">Hidratação Facial</a></li>
+                    <li class="mb-2"><a href="servicos.html#laser" class="text-decoration-none text-white-50">Laser Facial</a></li>
+                    <li><a href="servicos.html#massagem" class="text-decoration-none text-white-50">Massagem Relaxante</a></li>
+                </ul>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <h5 class="fw-bold mb-4">Contato</h5>
+                <p class="mb-2"><i class="fas fa-map-marker-alt me-2"></i> Av. Paulista, 1000, São Paulo - SP</p>
+                <p class="mb-2"><i class="fas fa-phone me-2"></i> (11) 99999-9999</p>
+                <p class="mb-2"><i class="fas fa-envelope me-2"></i> contato@bellezzaestetica.com.br</p>
+                <p><i class="fas fa-clock me-2"></i> Seg a Sex: 9h às 20h | Sáb: 9h às 17h</p>
+            </div>
+        </div>
+        <hr class="my-4">
+        <div class="row">
+            <div class="col-md-6 text-center text-md-start">
+                <p class="mb-0">&copy; 2023 Bellezza Estética. Todos os direitos reservados.</p>
+            </div>
+            <div class="col-md-6 text-center text-md-end">
+                <p class="mb-0">Desenvolvido com <i class="fas fa-heart text-danger"></i> por Web Design Studio</p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- Chatbot -->
+<div class="chat-widget">
+    <div class="chat-widget-button" id="chat-widget-toggle">
+        <i class="fas fa-comments"></i>
+    </div>
+    <div class="chat-widget-container" id="chat-widget">
+        <div class="chat-header">
+            <h5>Atendimento Online</h5>
+            <button class="chat-close" id="chat-close"><i class="fas fa-times"></i></button>
+        </div>
+        <div class="chat-body" id="chat-messages">
+            <div class="chat-message bot">
+                <div class="message-content">
+                    Olá! Como posso ajudar você hoje? Estou aqui para responder suas dúvidas sobre nossos tratamentos estéticos.
+                </div>
+                <small class="message-time">Agora</small>
+            </div>
+        </div>
+        <div class="chat-footer">
+            <input type="text" class="chat-input" id="chat-input" placeholder="Digite sua mensagem...">
+            <button class="chat-send" id="chat-send"><i class="fas fa-paper-plane"></i></button>
+        </div>
+    </div>
+</div>
+
+<!-- Bootstrap & JavaScript -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+<!-- AOS Animation -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<!-- Custom JS -->
+<script src="script.js"></script>
+</body>
+</html>

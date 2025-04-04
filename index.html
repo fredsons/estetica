@@ -1,0 +1,1042 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bellezza - Clínica de Estética</title>
+
+<!-- SEO Melhorado -->
+<meta name="description" content="Bellezza Estética - Tratamentos de beleza personalizados com os melhores profissionais e tecnologias avançadas em São Paulo.">
+<meta name="keywords" content="estética, beleza, spa, tratamento facial, limpeza de pele, microagulhamento, são paulo">
+
+<!-- Open Graph para compartilhamento em redes sociais -->
+<meta property="og:title" content="Bellezza Estética - Cuidados estéticos avançados">
+<meta property="og:description" content="Tratamentos de beleza personalizados com os melhores profissionais e tecnologias avançadas.">
+<meta property="og:image" content="https://example.com/images/bellezza-preview.jpg">
+<meta property="og:url" content="https://bellezzaestetica.com.br">
+
+<!-- Bootstrap CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+<!-- Font Awesome -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+<!-- AOS Animations -->
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<!-- FullCalendar -->
+<link href='https://cdn.jsdelivr.net/npm/fullcalendar@5.10.0/main.min.css' rel='stylesheet' />
+<!-- Custom CSS -->
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="accessibility-tools bg-light py-2">
+        <div class="container">
+            <div class="d-flex justify-content-between align-items-center">
+                <!-- Seletor de Idioma -->
+                <div class="language-selector dropdown">
+                    <button class="btn btn-sm btn-outline-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown">
+                        <i class="fas fa-globe"></i> PT-BR
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item active" href="#">Português</a></li>
+                        <li><a class="dropdown-item" href="#">English</a></li>
+                        <li><a class="dropdown-item" href="#">Español</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Controles de Acessibilidade -->
+                <div>
+                    <button class="btn btn-sm btn-outline-secondary me-2 font-size-control" data-size="decrease">A-</button>
+                    <button class="btn btn-sm btn-outline-secondary me-2 font-size-control" data-size="reset">A</button>
+                    <button class="btn btn-sm btn-outline-secondary me-3 font-size-control" data-size="increase">A+</button>
+                    <button class="btn btn-sm btn-outline-dark high-contrast-toggle">Alto Contraste</button>
+                </div>
+            </div>
+        </div>
+    </div>
+<!-- Header -->
+<header>
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top bg-white shadow-sm mt-4">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <span class="text-primary fw-bold">Bellezza</span>
+                <span class="text-secondary">Estética</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Início</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#servicos">Serviços</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#sobre">Sobre</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#equipe">Equipe</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="antes_depois.html">Antes/Depois</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#depoimentos">Depoimentos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="blog.html">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contato.html">Contato</a>
+                    </li>
+                </ul>
+                <a href="#agendamento" class="btn btn-primary ms-lg-3">Agendar Agora</a>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<!-- Hero Section -->
+<section class="hero d-flex align-items-center">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6 d-flex flex-column justify-content-center" data-aos="fade-right" data-aos-delay="100">
+                <h1 class="display-4 fw-bold">Renove sua beleza e autoestima</h1>
+                <p class="lead my-4">Tratamentos estéticos avançados para realçar sua beleza natural com os melhores profissionais e tecnologias do mercado.</p>
+                <div>
+                    <a href="#servicos" class="btn btn-primary btn-lg me-3">Nossos Serviços</a>
+                    <a href="#agendamento" class="btn btn-outline-secondary btn-lg">Agendar Consulta</a>
+                </div>
+            </div>
+            <div class="col-lg-6 hero-img" data-aos="fade-left" data-aos-delay="200">
+                <img src="https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" class="img-fluid rounded" alt="Tratamento facial">
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Serviços -->
+<section id="servicos" class="section-padding bg-light">
+    <div class="container">
+        <div class="row text-center mb-5" data-aos="fade-up">
+            <div class="col-12">
+                <h2 class="fw-bold">Nossos Serviços</h2>
+                <p class="text-muted">Oferecemos tratamentos personalizados para suas necessidades</p>
+            </div>
+        </div>
+        <div class="row g-4">
+            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                <div class="card border-0 shadow-sm h-100">
+                    <div class="card-body text-center p-4">
+                        <div class="icon-box mb-3">
+                            <i class="fas fa-spa fa-3x text-primary"></i>
+                        </div>
+                        <h5 class="fw-bold">Limpeza de Pele</h5>
+                        <p class="text-muted">Tratamento completo para remover impurezas e revitalizar sua pele.</p>
+                        <a href="servicos.html#limpeza" class="btn btn-outline-primary mt-3">Saiba Mais</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+                <div class="card border-0 shadow-sm h-100">
+                    <div class="card-body text-center p-4">
+                        <div class="icon-box mb-3">
+                            <i class="fas fa-magic fa-3x text-primary"></i>
+                        </div>
+                        <h5 class="fw-bold">Microagulhamento</h5>
+                        <p class="text-muted">Estimula a produção de colágeno e elastina, melhorando a aparência da pele.</p>
+                        <a href="servicos.html#microagulhamento" class="btn btn-outline-primary mt-3">Saiba Mais</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+                <div class="card border-0 shadow-sm h-100">
+                    <div class="card-body text-center p-4">
+                        <div class="icon-box mb-3">
+                            <i class="fas fa-tint fa-3x text-primary"></i>
+                        </div>
+                        <h5 class="fw-bold">Hidratação Facial</h5>
+                        <p class="text-muted">Recupere a hidratação natural da pele com tratamentos avançados.</p>
+                        <a href="servicos.html#hidratacao" class="btn btn-outline-primary mt-3">Saiba Mais</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                <div class="card border-0 shadow-sm h-100">
+                    <div class="card-body text-center p-4">
+                        <div class="icon-box mb-3">
+                            <i class="fas fa-lightbulb fa-3x text-primary"></i>
+                        </div>
+                        <h5 class="fw-bold">Laser Facial</h5>
+                        <p class="text-muted">Rejuvenescimento e tratamento de manchas com tecnologia de ponta.</p>
+                        <a href="servicos.html#laser" class="btn btn-outline-primary mt-3">Saiba Mais</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+                <div class="card border-0 shadow-sm h-100">
+                    <div class="card-body text-center p-4">
+                        <div class="icon-box mb-3">
+                            <i class="fas fa-child fa-3x text-primary"></i>
+                        </div>
+                        <h5 class="fw-bold">Drenagem Linfática</h5>
+                        <p class="text-muted">Massagem terapêutica que ajuda na eliminação de toxinas e redução de inchaços.</p>
+                        <a href="servicos.html#drenagem" class="btn btn-outline-primary mt-3">Saiba Mais</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+                <div class="card border-0 shadow-sm h-100">
+                    <div class="card-body text-center p-4">
+                        <div class="icon-box mb-3">
+                            <i class="fas fa-heart fa-3x text-primary"></i>
+                        </div>
+                        <h5 class="fw-bold">Massagem Relaxante</h5>
+                        <p class="text-muted">Alivie o estresse e tensão muscular com nossas técnicas especializadas.</p>
+                        <a href="servicos.html#massagem" class="btn btn-outline-primary mt-3">Saiba Mais</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="text-center mt-5" data-aos="fade-up">
+            <a href="servicos.html" class="btn btn-primary btn-lg">Ver Todos os Serviços</a>
+        </div>
+    </div>
+</section>
+
+<!-- Sobre Nós -->
+<section id="sobre" class="section-padding">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-6 mb-4 mb-lg-0" data-aos="fade-right" data-aos-delay="100">
+                <img src="https://images.unsplash.com/photo-1560750588-73207b1ef5b8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" class="img-fluid rounded" alt="Nossa clínica">
+            </div>
+            <div class="col-lg-6 ps-lg-5" data-aos="fade-left" data-aos-delay="200">
+                <h2 class="fw-bold mb-4">Sobre a Bellezza Estética</h2>
+                <p class="lead">Oferecemos o que há de mais avançado em tratamentos estéticos desde 2010.</p>
+                <p class="text-muted">Nossa clínica foi fundada com o propósito de oferecer tratamentos estéticos de alta qualidade em um ambiente acolhedor e relaxante. Contamos com profissionais altamente qualificados e equipamentos de última geração para garantir os melhores resultados para nossos clientes.</p>
+                <div class="d-flex mt-4">
+                    <div class="me-4">
+                        <h5 class="fw-bold text-primary counter" data-target="10">0</h5>
+                        <p>Anos de experiência</p>
+                    </div>
+                    <div class="me-4">
+                        <h5 class="fw-bold text-primary counter" data-target="5000">0</h5>
+                        <p>Clientes satisfeitos</p>
+                    </div>
+                    <div>
+                        <h5 class="fw-bold text-primary counter" data-target="15">0</h5>
+                        <p>Especialistas</p>
+                    </div>
+                </div>
+                <a href="#equipe" class="btn btn-primary mt-3">Conheça nossa equipe</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Avaliação Virtual -->
+<section class="section-padding bg-light">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-6 mb-4 mb-lg-0" data-aos="fade-right" data-aos-delay="100">
+                <h2 class="fw-bold">Avaliação Virtual Gratuita</h2>
+                <p class="lead">Não sabe qual tratamento é ideal para você? Faça uma avaliação preliminar online!</p>
+                <p>Envie uma foto do seu rosto ou área de preocupação, e nossa equipe de especialistas fará uma análise inicial e recomendará os melhores tratamentos para suas necessidades específicas.</p>
+                <div class="d-flex align-items-center mt-4">
+                    <a href="#virtual-assessment" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#avaliacaoModal">Iniciar Avaliação Virtual</a>
+                </div>
+            </div>
+            <div class="col-lg-6" data-aos="fade-left" data-aos-delay="200">
+                <img src="https://images.unsplash.com/photo-1587556930799-8dca6fad6d41?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" class="img-fluid rounded shadow" alt="Avaliação virtual">
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Equipe -->
+<section id="equipe" class="section-padding">
+    <div class="container">
+        <div class="row text-center mb-5" data-aos="fade-up">
+            <div class="col-12">
+                <h2 class="fw-bold">Nossa Equipe</h2>
+                <p class="text-muted">Conheça nossos profissionais qualificados</p>
+            </div>
+        </div>
+        <div class="row g-4">
+            <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                <div class="team-member text-center">
+                    <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=688&q=80" class="img-fluid rounded-circle mb-3" alt="Profissional">
+                    <h5 class="fw-bold">Dra. Ana Silva</h5>
+                    <p class="text-muted">Esteticista Facial</p>
+                    <div class="social-links">
+                        <a href="#" class="text-decoration-none mx-2"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="text-decoration-none mx-2"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-decoration-none mx-2"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="200">
+                <div class="team-member text-center">
+                    <img src="https://images.unsplash.com/photo-1622253692010-333f2da6031d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=688&q=80" class="img-fluid rounded-circle mb-3" alt="Profissional">
+                    <h5 class="fw-bold">Dr. Ricardo Costa</h5>
+                    <p class="text-muted">Dermatologista</p>
+                    <div class="social-links">
+                        <a href="#" class="text-decoration-none mx-2"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="text-decoration-none mx-2"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-decoration-none mx-2"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="300">
+                <div class="team-member text-center">
+                    <img src="https://images.unsplash.com/photo-1594744803329-e58b31de8bf5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80" class="img-fluid rounded-circle mb-3" alt="Profissional">
+                    <h5 class="fw-bold">Mariana Santos</h5>
+                    <p class="text-muted">Massoterapeuta</p>
+                    <div class="social-links">
+                        <a href="#" class="text-decoration-none mx-2"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="text-decoration-none mx-2"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-decoration-none mx-2"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="400">
+                <div class="team-member text-center">
+                    <img src="https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" class="img-fluid rounded-circle mb-3" alt="Profissional">
+                    <h5 class="fw-bold">Paula Oliveira</h5>
+                    <p class="text-muted">Esteticista Corporal</p>
+                    <div class="social-links">
+                        <a href="#" class="text-decoration-none mx-2"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="text-decoration-none mx-2"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-decoration-none mx-2"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Depoimentos em Vídeo -->
+<section class="section-padding bg-light">
+    <div class="container">
+        <div class="row text-center mb-5" data-aos="fade-up">
+            <div class="col-12">
+                <h2 class="fw-bold">Veja o que nossos clientes dizem</h2>
+                <p class="text-muted">Depoimentos em vídeo de clientes reais</p>
+            </div>
+        </div>
+        
+        <div class="row g-4">
+            <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+                <div class="card border-0 shadow h-100">
+                    <div class="video-container position-relative">
+                        <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" class="card-img-top" alt="Vídeo depoimento">
+                        <div class="video-play-button">
+                            <a href="#" data-bs-toggle="modal" data-bs-target="#videoModal1">
+                                <i class="fas fa-play"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="card-body text-center">
+                        <h5 class="fw-bold mb-1">Maria Silva</h5>
+                        <p class="text-muted mb-3">Tratamento: Microagulhamento</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
+                <div class="card border-0 shadow h-100">
+                    <div class="video-container position-relative">
+                        <img src="https://images.unsplash.com/photo-1534751516642-a1af1ef26a56?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" class="card-img-top" alt="Vídeo depoimento">
+                        <div class="video-play-button">
+                            <a href="#" data-bs-toggle="modal" data-bs-target="#videoModal2">
+                                <i class="fas fa-play"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="card-body text-center">
+                        <h5 class="fw-bold mb-1">Carlos Ferreira</h5>
+                        <p class="text-muted mb-3">Tratamento: Drenagem Linfática</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="300">
+                <div class="card border-0 shadow h-100">
+                    <div class="video-container position-relative">
+                        <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" class="card-img-top" alt="Vídeo depoimento">
+                        <div class="video-play-button">
+                            <a href="#" data-bs-toggle="modal" data-bs-target="#videoModal3">
+                                <i class="fas fa-play"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="card-body text-center">
+                        <h5 class="fw-bold mb-1">Fernanda Lima</h5>
+                        <p class="text-muted mb-3">Tratamento: Hidratação Facial</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Depoimentos -->
+<section id="depoimentos" class="section-padding">
+    <div class="container">
+        <div class="row text-center mb-5" data-aos="fade-up">
+            <div class="col-12">
+                <h2 class="fw-bold">O Que Nossos Clientes Dizem</h2>
+                <p class="text-muted">Veja os depoimentos de quem já experimentou nossos tratamentos</p>
+            </div>
+        </div>
+        <div class="row g-4">
+            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                <div class="card border-0 shadow-sm h-100">
+                    <div class="card-body p-4">
+                        <div class="mb-3">
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                        </div>
+                        <p class="text-muted">"Os tratamentos faciais da Bellezza transformaram minha pele! A equipe é extremamente profissional e atenciosa. Recomendo a todos!"</p>
+                        <div class="d-flex align-items-center">
+                            <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=200&q=80" class="rounded-circle" width="50" alt="Cliente">
+                            <div class="ms-3">
+                                <h6 class="mb-0">Julia Mendes</h6>
+                                <small class="text-muted">Cliente há 2 anos</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+                <div class="card border-0 shadow-sm h-100">
+                    <div class="card-body p-4">
+                        <div class="mb-3">
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                        </div>
+                        <p class="text-muted">"A drenagem linfática da Mariana é incrível! Os resultados são visíveis já nas primeiras sessões. O ambiente da clínica é super aconchegante!"</p>
+                        <div class="d-flex align-items-center">
+                            <img src="https://images.unsplash.com/photo-1534751516642-a1af1ef26a56?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=200&q=80" class="rounded-circle" width="50" alt="Cliente">
+                            <div class="ms-3">
+                                <h6 class="mb-0">Carlos Ferreira</h6>
+                                <small class="text-muted">Cliente há 1 ano</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+                <div class="card border-0 shadow-sm h-100">
+                    <div class="card-body p-4">
+                        <div class="mb-3">
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                        </div>
+                        <p class="text-muted">"Fiz o tratamento de microagulhamento com o Dr. Ricardo e os resultados foram surpreendentes! Minha autoestima melhorou muito. Obrigada, Bellezza!"</p>
+                        <div class="d-flex align-items-center">
+                            <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=200&q=80" class="rounded-circle" width="50" alt="Cliente">
+                            <div class="ms-3">
+                                <h6 class="mb-0">Fernanda Lima</h6>
+                                <small class="text-muted">Cliente há 6 meses</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Programa de Fidelidade -->
+<section id="fidelidade" class="section-padding bg-light">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-6 mb-4 mb-lg-0" data-aos="fade-right" data-aos-delay="100">
+                <h2 class="fw-bold mb-4">Programa de Fidelidade Bellezza</h2>
+                <p class="lead">Acumule pontos a cada procedimento e troque por descontos ou tratamentos gratuitos!</p>
+                <ul class="list-unstyled mb-4">
+                    <li class="mb-2"><i class="fas fa-check-circle text-primary me-2"></i> 1 ponto para cada R$ 10 gastos</li>
+                    <li class="mb-2"><i class="fas fa-check-circle text-primary me-2"></i> Pontos acumulativos por 12 meses</li>
+                    <li class="mb-2"><i class="fas fa-check-circle text-primary me-2"></i> Promoções exclusivas para membros</li>
+                    <li class="mb-2"><i class="fas fa-check-circle text-primary me-2"></i> Bônus de aniversário</li>
+                </ul>
+                <a href="#fidelidade-modal" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#fidelidadeModal">Cadastre-se no programa</a>
+            </div>
+            <div class="col-lg-6" data-aos="fade-left" data-aos-delay="200">
+                <img src="https://images.unsplash.com/photo-1607083206968-13611e3d76db?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" class="img-fluid rounded shadow" alt="Programa de fidelidade">
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Loja -->
+<section id="loja" class="section-padding">
+    <div class="container">
+        <div class="row text-center mb-5" data-aos="fade-up">
+            <div class="col-12">
+                <h2 class="fw-bold">Produtos Recomendados</h2>
+                <p class="text-muted">Linha exclusiva de cosméticos e produtos para cuidados diários</p>
+            </div>
+        </div>
+        
+        <div class="row g-4">
+            <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="100">
+                <div class="card product-card border-0 shadow-sm h-100">
+                    <div class="product-badge bg-danger text-white">-15%</div>
+                    <img src="https://images.unsplash.com/photo-1571781926291-c477ebfd024b?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" class="card-img-top" alt="Produto">
+                    <div class="card-body">
+                        <h5 class="card-title">Sérum Facial Hidratante</h5>
+                        <div class="product-rating mb-2">
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star-half-alt text-warning"></i>
+                            <span class="ms-2 text-muted">(24)</span>
+                        </div>
+                        <div class="d-flex justify-content-between align-items-center mb-3">
+                            <div>
+                                <span class="text-muted text-decoration-line-through me-2">R$ 129,90</span>
+                                <span class="h5 text-primary mb-0">R$ 110,40</span>
+                            </div>
+                        </div>
+                        <button class="btn btn-primary w-100"><i class="fas fa-shopping-cart me-2"></i>Adicionar ao Carrinho</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="200">
+                <div class="card product-card border-0 shadow-sm h-100">
+                    <img src="https://images.unsplash.com/photo-1611080626919-7cf5a9dbab5b?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" class="card-img-top" alt="Produto">
+                    <div class="card-body">
+                        <h5 class="card-title">Máscara Facial de Argila</h5>
+                        <div class="product-rating mb-2">
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                            <span class="ms-2 text-muted">(42)</span>
+                        </div>
+                        <div class="d-flex justify-content-between align-items-center mb-3">
+                            <div>
+                                <span class="h5 text-primary mb-0">R$ 89,90</span>
+                            </div>
+                        </div>
+                        <button class="btn btn-primary w-100"><i class="fas fa-shopping-cart me-2"></i>Adicionar ao Carrinho</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="300">
+                <div class="card product-card border-0 shadow-sm h-100">
+                    <div class="product-badge bg-primary text-white">Novo</div>
+                    <img src="https://images.unsplash.com/photo-1611930022073-84a47d7a3ff3?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" class="card-img-top" alt="Produto">
+                    <div class="card-body">
+                        <h5 class="card-title">Protetor Solar Facial FPS 60</h5>
+                        <div class="product-rating mb-2">
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star-half-alt text-warning"></i>
+                            <span class="ms-2 text-muted">(18)</span>
+                        </div>
+                        <div class="d-flex justify-content-between align-items-center mb-3">
+                            <div>
+                                <span class="h5 text-primary mb-0">R$ 98,50</span>
+                            </div>
+                        </div>
+                        <button class="btn btn-primary w-100"><i class="fas fa-shopping-cart me-2"></i>Adicionar ao Carrinho</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="400">
+                <div class="card product-card border-0 shadow-sm h-100">
+                    <div class="product-badge bg-danger text-white">-20%</div>
+                    <img src="https://images.unsplash.com/photo-1620916566398-39f1143ab7be?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" class="card-img-top" alt="Produto">
+                    <div class="card-body">
+                        <h5 class="card-title">Kit Esfoliantes Corporais</h5>
+                        <div class="product-rating mb-2">
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                            <span class="ms-2 text-muted">(37)</span>
+                        </div>
+                        <div class="d-flex justify-content-between align-items-center mb-3">
+                            <div>
+                                <span class="text-muted text-decoration-line-through me-2">R$ 149,90</span>
+                                <span class="h5 text-primary mb-0">R$ 119,92</span>
+                            </div>
+                        </div>
+                        <button class="btn btn-primary w-100"><i class="fas fa-shopping-cart me-2"></i>Adicionar ao Carrinho</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="text-center mt-5" data-aos="fade-up">
+            <a href="loja.html" class="btn btn-primary btn-lg">Ver Todos os Produtos</a>
+        </div>
+    </div>
+</section>
+
+<!-- Agendamento com Calendário -->
+<section id="agendamento" class="section-padding bg-primary text-white">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 text-center mb-5" data-aos="fade-up">
+                <h2 class="fw-bold">Agende sua consulta</h2>
+                <p class="lead">Escolha o dia e horário mais conveniente para você</p>
+            </div>
+        </div>
+        <div class="row align-items-center">
+            <div class="col-lg-6 mb-5 mb-lg-0" data-aos="fade-right" data-aos-delay="100">
+                <ul class="list-unstyled mb-4">
+                    <li class="mb-2"><i class="fas fa-check me-2"></i> Avaliação personalizada</li>
+                    <li class="mb-2"><i class="fas fa-check me-2"></i> Profissionais qualificados</li>
+                    <li class="mb-2"><i class="fas fa-check me-2"></i> Equipamentos de última geração</li>
+                    <li><i class="fas fa-check me-2"></i> Ambiente acolhedor e relaxante</li>
+                </ul>
+                <p class="mb-3">
+                    <i class="fas fa-phone me-2"></i> (11) 99999-9999<br>
+                    <i class="fas fa-envelope me-2"></i> contato@bellezzaestetica.com.br
+                </p>
+                <!-- Calendário de agendamento -->
+                <div class="card bg-white text-dark mt-4">
+                    <div class="card-body p-3">
+                        <div id="booking-calendar"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6" data-aos="fade-left" data-aos-delay="200">
+                <div class="card border-0 shadow">
+                    <div class="card-body p-5">
+                        <h4 class="text-center text-dark mb-4">Solicite seu agendamento</h4>
+                        <form id="appointment-form">
+                            <div class="mb-3">
+                                <input type="text" class="form-control" placeholder="Nome completo" required>
+                            </div>
+                            <div class="mb-3">
+                                <input type="email" class="form-control" placeholder="E-mail" required>
+                            </div>
+                            <div class="mb-3">
+                                <input type="tel" class="form-control" placeholder="Telefone" required>
+                            </div>
+                            <div class="mb-3">
+                                <select class="form-select" required>
+                                    <option value="" selected disabled>Selecione o serviço</option>
+                                    <option>Limpeza de Pele</option>
+                                    <option>Microagulhamento</option>
+                                    <option>Hidratação Facial</option>
+                                    <option>Laser Facial</option>
+                                    <option>Drenagem Linfática</option>
+                                    <option>Massagem Relaxante</option>
+                                </select>
+                            </div>
+                            <div class="mb-3">
+                                <input type="date" class="form-control" id="selected-date" required>
+                            </div>
+                            <div class="mb-3">
+                                <select class="form-select" required>
+                                    <option value="" selected disabled>Selecione o horário</option>
+                                    <option>09:00</option>
+                                    <option>10:00</option>
+                                    <option>11:00</option>
+                                    <option>14:00</option>
+                                    <option>15:00</option>
+                                    <option>16:00</option>
+                                    <option>17:00</option>
+                                    <option>18:00</option>
+                                </select>
+                            </div>
+                            <div class="mb-3">
+                                <textarea class="form-control" placeholder="Mensagem (opcional)" rows="3"></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary w-100">Solicitar Agendamento</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Perguntas Frequentes -->
+<section class="section-padding">
+    <div class="container">
+        <div class="row text-center mb-5" data-aos="fade-up">
+            <div class="col-12">
+                <h2 class="fw-bold">Perguntas Frequentes</h2>
+                <p class="text-muted">Respostas para as dúvidas mais comuns dos nossos clientes</p>
+            </div>
+        </div>
+        
+        <div class="row">
+            <div class="col-lg-4 mb-4" data-aos="fade-right" data-aos-delay="100">
+                <div class="faq-categories">
+                    <div class="list-group">
+                        <a href="#geral" class="list-group-item list-group-item-action active" data-bs-toggle="list">Informações Gerais</a>
+                        <a href="#tratamentos" class="list-group-item list-group-item-action" data-bs-toggle="list">Sobre os Tratamentos</a>
+                        <a href="#resultados" class="list-group-item list-group-item-action" data-bs-toggle="list">Resultados e Cuidados</a>
+                        <a href="#pagamentos" class="list-group-item list-group-item-action" data-bs-toggle="list">Pagamentos e Planos</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-lg-8" data-aos="fade-left" data-aos-delay="200">
+                <div class="tab-content">
+                    <div class="tab-pane fade show active" id="geral">
+                        <div class="accordion" id="accordionGeral">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseG1">
+                                        Como agendar uma consulta?
+                                    </button>
+                                </h2>
+                                <div id="collapseG1" class="accordion-collapse collapse show" data-bs-parent="#accordionGeral">
+                                    <div class="accordion-body">
+                                        Você pode agendar uma consulta através do nosso site, preenchendo o formulário de agendamento, ou ligando para (11) 99999-9999. Também aceitamos agendamentos por WhatsApp no mesmo número.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseG2">
+                                        Qual o horário de funcionamento da clínica?
+                                    </button>
+                                </h2>
+                                <div id="collapseG2" class="accordion-collapse collapse" data-bs-parent="#accordionGeral">
+                                    <div class="accordion-body">
+                                        A Bellezza Estética funciona de segunda a sexta-feira, das 9h às 20h, e aos sábados, das 9h às 17h. Domingos e feriados a clínica permanece fechada.
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Mais perguntas -->
+                        </div>
+                    </div>
+                    
+                    <!-- Outras categorias de FAQ -->
+                    <div class="tab-pane fade" id="tratamentos">
+                        <!-- Conteúdo para tratamentos -->
+                    </div>
+                    
+                    <div class="tab-pane fade" id="resultados">
+                        <!-- Conteúdo para resultados -->
+                    </div>
+                    
+                    <div class="tab-pane fade" id="pagamentos">
+                        <!-- Conteúdo para pagamentos -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="text-center mt-5">
+            <a href="faq.html" class="btn btn-outline-primary btn-lg">Ver todas as perguntas</a>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="bg-dark text-white pt-5 pb-4">
+    <div class="container">
+        <div class="row g-4">
+            <div class="col-lg-3 col-md-6">
+                <h4 class="fw-bold mb-4">Bellezza Estética</h4>
+                <p>Cuidando da sua beleza e autoestima com tratamentos personalizados e inovadores.</p>
+                <div class="social-links">
+                    <a href="#" class="text-white me-3"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="text-white me-3"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="text-white me-3"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="text-white me-3"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <h5 class="fw-bold mb-4">Links rápidos</h5>
+                <ul class="list-unstyled">
+                    <li class="mb-2"><a href="#" class="text-decoration-none text-white-50">Início</a></li>
+                    <li class="mb-2"><a href="#servicos" class="text-decoration-none text-white-50">Serviços</a></li>
+                    <li class="mb-2"><a href="#sobre" class="text-decoration-none text-white-50">Sobre</a></li>
+                    <li class="mb-2"><a href="#equipe" class="text-decoration-none text-white-50">Equipe</a></li>
+                    <li><a href="contato.html" class="text-decoration-none text-white-50">Contato</a></li>
+                </ul>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <h5 class="fw-bold mb-4">Serviços</h5>
+                <ul class="list-unstyled">
+                    <li class="mb-2"><a href="servicos.html#limpeza" class="text-decoration-none text-white-50">Limpeza de Pele</a></li>
+                    <li class="mb-2"><a href="servicos.html#microagulhamento" class="text-decoration-none text-white-50">Microagulhamento</a></li>
+                    <li class="mb-2"><a href="servicos.html#hidratacao" class="text-decoration-none text-white-50">Hidratação Facial</a></li>
+                    <li class="mb-2"><a href="servicos.html#laser" class="text-decoration-none text-white-50">Laser Facial</a></li>
+                    <li><a href="servicos.html#massagem" class="text-decoration-none text-white-50">Massagem Relaxante</a></li>
+                </ul>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <h5 class="fw-bold mb-4">Contato</h5>
+                <p class="mb-2"><i class="fas fa-map-marker-alt me-2"></i> Av. Paulista, 1000, São Paulo - SP</p>
+                <p class="mb-2"><i class="fas fa-phone me-2"></i> (11) 99999-9999</p>
+                <p class="mb-2"><i class="fas fa-envelope me-2"></i> contato@bellezzaestetica.com.br</p>
+                <p><i class="fas fa-clock me-2"></i> Seg a Sex: 9h às 20h | Sáb: 9h às 17h</p>
+            </div>
+        </div>
+        <hr class="my-4">
+        <div class="row">
+            <div class="col-md-6 text-center text-md-start">
+                <p class="mb-0">&copy; 2023 Bellezza Estética. Todos os direitos reservados.</p>
+            </div>
+            <div class="col-md-6 text-center text-md-end">
+                <p class="mb-0">Desenvolvido com <i class="fas fa-heart text-danger"></i> por Web Design Studio</p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- Modais -->
+<!-- Modal de Avaliação Virtual -->
+<div class="modal fade" id="avaliacaoModal" tabindex="-1">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header bg-primary text-white">
+                <h5 class="modal-title">Avaliação Virtual</h5>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>Envie uma foto da área que deseja tratar para nossa análise inicial:</p>
+                <form id="virtual-assessment-form">
+                    <div class="mb-3">
+                        <label for="name" class="form-label">Nome completo</label>
+                        <input type="text" class="form-control" id="name" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">E-mail</label>
+                        <input type="email" class="form-control" id="email" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="phone" class="form-label">Telefone</label>
+                        <input type="tel" class="form-control" id="phone" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="concern" class="form-label">Qual sua principal preocupação?</label>
+                        <select class="form-select" id="concern" required>
+                            <option value="" selected disabled>Selecione</option>
+                            <option>Acne</option>
+                            <option>Manchas</option>
+                            <option>Rugas</option>
+                            <option>Flacidez</option>
+                            <option>Olheiras</option>
+                            <option>Outro</option>
+                        </select>
+                    </div>
+                    <div class="mb-3">
+                        <label for="photo" class="form-label">Envie sua foto</label>
+                        <input type="file" class="form-control" id="photo" accept="image/*" required>
+                        <small class="form-text text-muted">Envie uma foto clara da área que gostaria de tratar.</small>
+                    </div>
+                    <div class="mb-3">
+                        <label for="message" class="form-label">Mensagem adicional</label>
+                        <textarea class="form-control" id="message" rows="3"></textarea>
+                    </div>
+                    <div class="mb-3 form-check">
+                        <input type="checkbox" class="form-check-input" id="privacy" required>
+                        <label class="form-check-label text-muted" for="privacy">
+                            Concordo com a <a href="#">Política de Privacidade</a> e autorizo o uso da minha imagem para fins de avaliação.
+                        </label>
+                    </div>
+                    <button type="submit" class="btn btn-primary w-100">Enviar para Avaliação</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal de Fidelidade -->
+<div class="modal fade" id="fidelidadeModal" tabindex="-1">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header bg-primary text-white">
+                <h5 class="modal-title">Programa de Fidelidade</h5>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>Cadastre-se no nosso programa de fidelidade e comece a acumular pontos hoje mesmo!</p>
+                <form id="fidelidade-form">
+                    <div class="mb-3">
+                        <input type="text" class="form-control" placeholder="Nome completo" required>
+                    </div>
+                    <div class="mb-3">
+                        <input type="email" class="form-control" placeholder="E-mail" required>
+                    </div>
+                    <div class="mb-3">
+                        <input type="tel" class="form-control" placeholder="Telefone" required>
+                    </div>
+                    <div class="mb-3">
+                        <input type="date" class="form-control" placeholder="Data de Nascimento" required>
+                    </div>
+                    <div class="mb-3 form-check">
+                        <input type="checkbox" class="form-check-input" id="newsletter" checked>
+                        <label class="form-check-label text-muted" for="newsletter">
+                            Desejo receber novidades e promoções por e-mail
+                        </label>
+                    </div>
+                    <div class="mb-3 form-check">
+                        <input type="checkbox" class="form-check-input" id="terms" required>
+                        <label class="form-check-label text-muted" for="terms">
+                            Concordo com os <a href="#">Termos e Condições</a> do programa de fidelidade
+                        </label>
+                    </div>
+                    <button type="submit" class="btn btn-primary w-100">Cadastrar</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modais para vídeos -->
+<div class="modal fade" id="videoModal1" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+            <div class="modal-body p-0">
+                <button type="button" class="btn-close position-absolute top-0 end-0 bg-white m-2" data-bs-dismiss="modal" aria-label="Close"></button>
+                <div class="ratio ratio-16x9">
+                    <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="YouTube video" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="videoModal2" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+            <div class="modal-body p-0">
+                <button type="button" class="btn-close position-absolute top-0 end-0 bg-white m-2" data-bs-dismiss="modal" aria-label="Close"></button>
+                <div class="ratio ratio-16x9">
+                    <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="YouTube video" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="videoModal3" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+            <div class="modal-body p-0">
+                <button type="button" class="btn-close position-absolute top-0 end-0 bg-white m-2" data-bs-dismiss="modal" aria-label="Close"></button>
+                <div class="ratio ratio-16x9">
+                    <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="YouTube video" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal de Agendamento -->
+<div class="modal fade" id="booking-modal" tabindex="-1">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header bg-primary text-white">
+                <h5 class="modal-title">Agendar Horário</h5>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form id="booking-form">
+                    <input type="hidden" id="modal-selected-date">
+                    <div class="mb-3">
+                        <label class="form-label">Data selecionada</label>
+                        <input type="text" class="form-control" id="display-selected-date" disabled>
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Selecione um horário</label>
+                        <select class="form-select" required>
+                            <option value="" selected disabled>Escolha um horário disponível</option>
+                            <option>09:00</option>
+                            <option>10:00</option>
+                            <option>11:00</option>
+                            <option>14:00</option>
+                            <option>15:00</option>
+                            <option>16:00</option>
+                            <option>17:00</option>
+                            <option>18:00</option>
+                        </select>
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Selecione o serviço</label>
+                        <select class="form-select" required>
+                            <option value="" selected disabled>Escolha um serviço</option>
+                            <option>Limpeza de Pele</option>
+                            <option>Microagulhamento</option>
+                            <option>Hidratação Facial</option>
+                            <option>Laser Facial</option>
+                            <option>Drenagem Linfática</option>
+                            <option>Massagem Relaxante</option>
+                        </select>
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Nome completo</label>
+                        <input type="text" class="form-control" required>
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Telefone</label>
+                        <input type="tel" class="form-control" required>
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">E-mail</label>
+                        <input type="email" class="form-control" required>
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Observações</label>
+                        <textarea class="form-control" rows="3"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary w-100">Confirmar Agendamento</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Chatbot -->
+<div class="chat-widget">
+    <div class="chat-widget-button" id="chat-widget-toggle">
+        <i class="fas fa-comments"></i>
+    </div>
+    <div class="chat-widget-container" id="chat-widget">
+        <div class="chat-header">
+            <h5>Atendimento Online</h5>
+            <button class="chat-close" id="chat-close"><i class="fas fa-times"></i></button>
+        </div>
+        <div class="chat-body" id="chat-messages">
+            <div class="chat-message bot">
+                <div class="message-content">
+                    Olá! Como posso ajudar você hoje? Estou aqui para responder suas dúvidas sobre nossos tratamentos estéticos.
+                </div>
+                <small class="message-time">Agora</small>
+            </div>
+        </div>
+        <div class="chat-footer">
+            <input type="text" class="chat-input" id="chat-input" placeholder="Digite sua mensagem...">
+            <button class="chat-send" id="chat-send"><i class="fas fa-paper-plane"></i></button>
+        </div>
+    </div>
+</div>
+
+<!-- Bootstrap & JavaScript -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+<!-- FullCalendar -->
+<script src='https://cdn.jsdelivr.net/npm/fullcalendar@5.10.0/main.min.js'></script>
+<script src='https://cdn.jsdelivr.net/npm/fullcalendar@5.10.0/locales-all.min.js'></script>
+<!-- AOS Animation -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<!-- Custom JS -->
+<script src="script.js"></script>
+</body>
+</html>
